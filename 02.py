@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import folium
-import json
-from streamlit_folium import folium_static
-from streamlit_folium import st_folium
+
 
 df=pd.read_csv("gj.csv")
 df1=df.drop(['내용','등록자','시기','출처'],axis=1)
