@@ -27,7 +27,7 @@ st.dataframe(battle_df)
 map_geo = folium.Map(location=[35.5666,126.9784], zoom_start=7)
 st_data=st_folium(map_geo,width=700, height=1000)
 
-geo_json = 'TL_SCCO_CTPRVN.json'
+geo_json = 'requirements.json'
 
 folium.GeoJson(geo_json).add_to(map_geo)
 
