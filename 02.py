@@ -18,7 +18,7 @@ st.dataframe(battle_df)
 
 df2 = pd.DataFrame({'지역' : ['제주특별자치도','대전광역시','세종특별자치시','울산광역시','부산광역시'],'격전횟수':[0,0,0,0,0]}) #df수정가능성있음
 
-battle_df=battle_df.append(df2,ignore_index=True)
+battle_df=battle_df.concat([battle_df,df2],ignore_index=True)
 
 st.dataframe(battle_df)
 
