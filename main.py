@@ -7,7 +7,7 @@ from streamlit_folium import st_folium
 tab1,tab2,tab3=st.tabs(['Projects','Description','Introduction'])
 
 with tab1:
-  df=pd.read_csv("gj.csv")
+  df=pd.read_csv("war.csv")
   df1=df.drop(['내용','등록자','시기','출처'],axis=1)
   df2=df.drop(['내용','등록자','시기','출처','인물'],axis=1)
   st.subheader('데이터 수집')
@@ -33,7 +33,7 @@ with tab1:
   map_geo = folium.Map(location=[35.5666,126.9784], zoom_start=7)
   #st_data=st_folium(map_geo,width=700, height=1000)#지도
 
-  geo_json = 'TL_SCCO_CTPRVN.json'
+  geo_json = 'divided_by_korea_city.json'
   folium.GeoJson(geo_json).add_to(map_geo)
 
   folium.Choropleth(geo_data=geo_json,
