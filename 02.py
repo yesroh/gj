@@ -88,7 +88,6 @@ AI와 SW기술에 많은 흥미를 가지고 있습니다.''')
 기존의 문제를 효과적으로 해결하는일을 좋아합니다. ''')
   col1.link_button('Go to my github',url='https://github.com/minkyungjoo08/-')
   #col2.image("사진.jpg")
-
   st.divider() 
 
   col1, col2, col3 = st.columns(3)
