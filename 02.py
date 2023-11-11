@@ -34,8 +34,7 @@ with tab1:
   #st_data=st_folium(map_geo,width=700, height=1000)#지도
 
   geo_json = 'TL_SCCO_CTPRVN.json'
-
-#folium.GeoJson(geo_json).add_to(map_geo)
+  folium.GeoJson(geo_json).add_to(map_geo)
 
   folium.Choropleth(geo_data=geo_json,
                  data=battle_df,
@@ -88,7 +87,7 @@ AI와 SW기술에 많은 흥미를 가지고 있습니다.''')
   col1.text('''새로운 기술을 찾고 접목하여 
 기존의 문제를 효과적으로 해결하는일을 좋아합니다. ''')
   col1.link_button('Go to my github',url='https://github.com/minkyungjoo08/-')
-  col2.image("사진.jpg")
+  #col2.image("사진.jpg")
 
   st.divider() 
 
