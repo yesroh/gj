@@ -1,4 +1,4 @@
-streamlit.config-on_config_parsed
-streamlit.web.cli-main
+streamlit.config
+streamlit.web.cli
 streamlit_option_menu
-streamlit-folium==0.13.0
+streamlit-folium
