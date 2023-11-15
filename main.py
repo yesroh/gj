@@ -8,8 +8,8 @@ tab1,tab2,tab3=st.tabs(['Projects','Description','Introduction'])
 
 with tab1:
   df=pd.read_csv("war_data.csv")
-  df1=df.drop(['내용','등록자','시기','출처'],axis=1)
-  df2=df.drop(['내용','등록자','시기','출처','인물'],axis=1)
+  df1=df.drop(['내용','등록자','시기','출처','승','패'],axis=1)
+  df2=df1.drop(['인물'],axis=1)
   st.subheader('데이터 수집')
   st.text('1950~51년 사이의 전투 데이터 N개를 수집')
   st.dataframe(df1) #제목,지역,인물(df)
