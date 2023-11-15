@@ -1,9 +1,5 @@
 streamlit==1.25.0
-streamlit-folium==0.13.0
 pandas
 numpy
 folium
 pip
-streamlit.config-on_config_parsed
-streamlit.web.cli-main
-streamlit_option_menu
