@@ -7,7 +7,7 @@ from streamlit_folium import st_folium
 tab1,tab2,tab3=st.tabs(['Projects','Description','Introduction'])
 
 with tab1:
-  df=pd.read_csv("war.csv")
+  df=pd.read_csv("war_data.csv")
   df1=df.drop(['내용','등록자','시기','출처'],axis=1)
   df2=df.drop(['내용','등록자','시기','출처','인물'],axis=1)
   st.subheader('데이터 수집')
@@ -33,8 +33,9 @@ with tab1:
   map_geo = folium.Map(location=[35.5666,126.9784], zoom_start=7)
   #st_data=st_folium(map_geo,width=700, height=1000)#지도
 
-  geo_json = 'divided_by_korea_city.json'
-  folium.GeoJson(geo_json).add_to(map_geo)
+  geo_json = 'TL_SCCO_CTPRVN.json'
+
+#folium.GeoJson(geo_json).add_to(map_geo)
 
   folium.Choropleth(geo_data=geo_json,
                  data=battle_df,
@@ -46,7 +47,7 @@ with tab1:
   st.subheader('지역별 격전 횟수 시각화')
   st_map=st_folium(map_geo,width=700, height=1000 )#시각화 지도
 
-  #st.bar_chart(data=df,x='시기',y=['승','패'],color=['#ff0000','#0000ff']) df수정 후 실행해야함
+  st.bar_chart(data=df,x='시기',y=['승','패'],color=['#ff0000','#0000ff']) 
 
 
 with tab2:
@@ -86,7 +87,9 @@ with tab3:
 AI와 SW기술에 많은 흥미를 가지고 있습니다.''')
   col1.text('''새로운 기술을 찾고 접목하여 
 기존의 문제를 효과적으로 해결하는일을 좋아합니다. ''')
-  col1.link_button('Go to my github',url='https://github.com/minkyungjoo08')
+  col1.link_button('Go to my github',url='https://github.com/minkyungjoo08/-')
+  col2.image("다부동전투.jpeg")
+
   st.divider() 
 
   col1, col2, col3 = st.columns(3)
