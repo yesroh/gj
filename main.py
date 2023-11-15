@@ -33,7 +33,7 @@ with tab1:
   map_geo = folium.Map(location=[35.5666,126.9784], zoom_start=7)
   #st_data=st_folium(map_geo,width=700, height=1000)#지도
 
-  geo_json = 'TL_SCCO_CTPRVN.json'
+  geo_json = 'divided_by_korea_city.json'
 
 #folium.GeoJson(geo_json).add_to(map_geo)
 
