@@ -3,8 +3,4 @@ streamlit-folium==0.13.0
 pandas
 numpy
 folium
-pip 
-sys
-streamlit.config-on-config-parsed
-streamlit.web.cli-main
-streamlit_option_menu
+pip
