@@ -31,11 +31,9 @@ with tab1:
   st.bar_chart(battle_df,x='지역',y='격전횟수')
 
   map_geo = folium.Map(location=[35.5666,126.9784], zoom_start=7)
-  #st_data=st_folium(map_geo,width=700, height=1000)#지도
+  #st_data=st_folium(map_geo,width=700, height=1000) #지도
 
   geo_json = 'divided_by_korea_city.json'
-
-#folium.GeoJson(geo_json).add_to(map_geo)
 
   folium.Choropleth(geo_data=geo_json,
                  data=battle_df,
@@ -45,8 +43,10 @@ with tab1:
                  legend_name="격전횟수"
                  ).add_to(map_geo)
   st.subheader('지역별 격전 횟수 시각화')
-  st_map=st_folium(map_geo,width=700, height=1000 )#시각화 지도
+  st_map=st_folium(map_geo,width=700, height=1000 )#전투 시각화 지도
 
+  st.subheader('날짜별 격전의 승패 그래프')
+  #st.text('9/14일 이후로 승승장구하는 모습을 보임.')
   st.bar_chart(data=df,x='시기',y=['승','패'],color=['#ff0000','#0000ff']) 
 
 
