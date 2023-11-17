@@ -1,4 +1,0 @@
-streamlit.config
-streamlit.web.cli
-streamlit_option_menu
-streamlit-folium
