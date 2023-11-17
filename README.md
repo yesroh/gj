@@ -26,10 +26,9 @@
     
 ## 날짜별 격전 승패 막대그래프로 시각화 
 ![image](https://github.com/yesroh/gj/assets/115079913/3c5a8029-d2aa-4a84-9f16-5e188068a178)
-    </div>
+
 ## 6.25전쟁 중 의미있는 3개의 전투 
 ![image](https://github.com/yesroh/gj/assets/115079913/2bb24e59-adc7-49ad-8e9a-5df2255cc209)
 
-    </div>    
 ## streamlit을 이용해 포트폴리오를 제작
 ![image](https://github.com/yesroh/gj/assets/115079913/0e575bc7-431e-4b45-9289-35c9d435ebff)
