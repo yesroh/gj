@@ -1,19 +1,7 @@
 import streamlit as st
 import pandas as pd
 import folium
-import numpy as np
 from streamlit_folium import st_folium
-import sys
-from streamlit.config import on_config_parsed
-from streamlit.web.cli import main
-
-def register_options_menu():
-    import streamlit_option_menu
-
-on_config_parsed(register_options_menu)
-
-sys.argv.extend(["run", "main.py"])
-main(prog_name="streamlit")
 
 
 tab1,tab2,tab3=st.tabs(['Projects','Description','Introduction'])
